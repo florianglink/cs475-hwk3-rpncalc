@@ -41,5 +41,26 @@ double pop(Stack s)
     if(s.top != NULL){
         double val = s.top->data;
         struct Element* temp = s.top;
+        s.top = s.top->next;
+        free(temp);
+        return val;
+    }
+    else {
+        printf("Stack is empty\n");
+    }
+}
+
+/**
+ * Recursively calculates the total number of elements on the given stack
+ * @param e the top element of the stack
+ * @return the number of elements currently on the stack
+ */
+int size(Element* e)
+{
+    if(e == NULL) {
+        return 0;
+    }
+    else {
+        return 1+size(e->next);
     }
 }

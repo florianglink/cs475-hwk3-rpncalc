@@ -9,7 +9,7 @@
 #define STACK_H_
 
 //element struct for individual nodes on the stack
-typedef struct{
+typedef struct Element{
     double data;
     struct Element* next;
 } Element;
