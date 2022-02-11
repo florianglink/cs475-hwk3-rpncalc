@@ -39,7 +39,7 @@ void push(double num, Stack s)
 double pop(Stack s)
 {
     if(s.top != NULL){
-        struct element* temp = s.top;
-        
+        double val = s.top->data;
+        struct Element* temp = s.top;
     }
 }
