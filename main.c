@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : PolishSol.c
- Author      : 
+ Author      : Florian Godfrey Link
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
