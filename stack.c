@@ -1,5 +1,6 @@
 #include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "stack.h"
 
@@ -8,7 +9,7 @@
  * @param s an uninitialized Stack struct
  * @return an initialized Stack struct
  */
-Stack initStack(Stack s)
+void initStack(Stack s)
 {
     s.top = NULL;
 }
@@ -47,6 +48,7 @@ double pop(Stack s)
     }
     else {
         printf("Stack is empty\n");
+        return 0;
     }
 }
 

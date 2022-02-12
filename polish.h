@@ -8,6 +8,6 @@
 #ifndef POLISH_H_
 #define POLISH_H_
 
-// TODO: evaluate() declaration goes here
+double evaluate(const char exp[]);
 
 #endif /* POLISH_H_ */
