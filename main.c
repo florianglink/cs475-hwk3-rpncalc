@@ -21,17 +21,12 @@ int main()
 	char eqn[MAX_EQ_LEN];	 // string to store the input RPN expression
 	char resp[MAX_EQ_LEN]; // string to store the user's response "y" or "n"
 
-	//printf("Enter an equation in RPN:\n");
-	//fgets(eqn, MAX_EQ_LEN, stdin);
-	//printf("%lf\n", evaluate(eqn));
-
-	Stack st;
-	initStack(st);
-	push(1, st);
-	push(2, st);
-	push(3, st);
-	printf("%lf", pop(st));
-
-	printf("Exiting...\n");
+	printf("\nEnter an equation in RPN:\n");
+	while(resp[0] != 'n') {
+		fgets(eqn, MAX_EQ_LEN, stdin);
+		printf("%lf\n", evaluate(eqn));
+		printf("Evaluate another? (y/n): ");
+		fgets(resp, MAX_EQ_LEN, stdin);
+	}
 	return 0;
 }
